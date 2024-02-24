@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html{
+    font-size: 62.5%;
+}
+.header{
+
+
+ background: url("./pexels-svetozar-milashevich-1490908.jpg");
+ background-position: top;
+ height: 95vh;
+margin-left: 2rem;
+margin-right: 2rem;
+ position: relative; background-size: cover;
+    
+}
+
+header>*{
+    text-align: center;
+}
+.p1{
+    display: block;
+    animation: textleft 3s ease; 
+   
+}
+@keyframes textleft {
+    
+    0%{
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+    
+    80%{
+        transform: translateX(-0.0rem);
+        opacity: 0.8;
+    }
+
+    100%{
+       
+        opacity: 1;
+    }
+}
+
+.p2{
+    animation: textright 3s ease;
+    display: block;
+}
+@keyframes textright {
+    
+    0%{
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+    
+    80%{
+        transform: translateX(-0.0rem);
+        opacity: 0.8;
+    }
+
+    100%{
+       
+        opacity: 1;
+    }
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.2rem;
+    
+}
+
+.btn{
+    margin: 1rem;
+display:inline-block;
+
+
+width: 10rem;
+height: 3em;
+border-radius: 20em;
+border: 1px solid white;
+
+}
+.btn:hover{
+    transform: translateY(-0.5rem);
+}
