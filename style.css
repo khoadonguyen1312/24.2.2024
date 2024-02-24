@@ -8,13 +8,14 @@
 }
 .header{
 
-
- background: url("./pexels-svetozar-milashevich-1490908.jpg");
+line-height: 3rem;
+ background:linear-gradient(to right,#aad7d9b5,#fbf9f1a2), url("./pexels-svetozar-milashevich-1490908.jpg");
  background-position: top;
  height: 95vh;
 margin-left: 2rem;
 margin-right: 2rem;
  position: relative; background-size: cover;
+ clip-path: polygon(0 0 ,100% 0,100% 80%,0 100%);
     
 }
 
@@ -78,14 +79,33 @@ header>*{
 .btn{
     margin: 1rem;
 display:inline-block;
+text-transform: uppercase;
 
+background-color: #fbf9f1;
+font-weight:600;
 
 width: 10rem;
 height: 3em;
 border-radius: 20em;
 border: 1px solid white;
+box-shadow: 0 0 10px white;
 
 }
 .btn:hover{
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.2rem);
+    animation: hover 2s ;
+}.btn:active{
+    transform: translateY(0);
+    animation: active 2s;
+}
+@keyframes hover {
+    10%{
+        box-shadow:  0 0 10px white;
+    }
+    80%{
+        box-shadow: 20px 10px 30px white;
+    }
+    100%{
+        box-shadow: 20px 20px 40px white;
+    }
 }
